@@ -135,10 +135,24 @@ p {
     width: 100%;
 }
 
+.hero .anim {
+    padding: 1rem;
+    max-width: 300px;
+    margin-left: auto;
+}
+
 .hero .hero-heading {
 
     color: var(--dark-grey);
     text-align: center;
+}
+
+.anim-heading {
+    margin-bottom: -2rem;
+}
+
+.anim-intro {
+    margin-top: -2rem;
 }
 
 .hero .hero-heading .heading-inverted {
