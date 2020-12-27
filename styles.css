@@ -14,8 +14,7 @@ hr {
 }
 
 :root {
-    --primary-color: #070946;
-    --secondary-color: #3551f9;
+    --primary-color: #3551f9;
     --dark-grey: #595959;
     --off-white: #e9e8e8;
 }
@@ -126,7 +125,7 @@ p {
 }
 
 .blog-page-heading span {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .hero .hero-img {
@@ -157,7 +156,7 @@ p {
 }
 
 .hero .hero-heading .heading-inverted {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 /* section */
