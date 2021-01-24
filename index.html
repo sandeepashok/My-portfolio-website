@@ -7,12 +7,22 @@
     <title>Home | Sandeep Ashok</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" sizes="180x180" href="Images/favicon.ico">
+    <script src="script.js" defer></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
 <body>
     <nav class="navigation container">
-        <div class="nav-brand">ScriptoPlankton</div>
+        <div class="head-toggle">
+            <div class="nav-brand">ScriptoPlankton</div>
+            <div class="select">
+                <img src="./Images/monitor-levels.png" alt="Darkmode-icon" class="darkmode-icon"><select id="select-theme" class="select-input">
+                    <option value="auto">Auto</option>
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </select>
+            </div>
+        </div>
         <ul class="list-non-bullet nav-pills">
             <li class="list-item-inline"><a class="link link-active" href="index.html">HOME</a></li>
             <li class="list-item-inline"><a class="link" href="projects.html">PROJECTS</a></li>

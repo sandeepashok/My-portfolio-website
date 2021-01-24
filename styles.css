@@ -3,20 +3,51 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 
+:root {
+    --dm-primary-color: #061b9d;
+    --dm-dark-grey: #ffffffdb;
+    --dm-off-white: #e9e8e814;
+    --dm-span-color: #2d47e8;
+    --dm-text-color: white;
+    --dm-body-bg: rgb(20, 20, 20);
+}
+
 body {
+    --primary-color: #3551f9;
+    --dark-grey: #595960;
+    --off-white: #e9e8e8;
+    --span-color: #3551f9;
+    --text-color: black;
+    --body-bg: white;
     font-family: 'Cairo', sans-serif;
     /* font-family: 'Montserrat', sans-serif; */
     margin: 0px;
+    background-color: var(--body-bg);
+    color: var(--text-color);
+}
+
+body.theme-dark {
+    --primary-color: var(--dm-primary-color);
+    --dark-grey: var(--dm-dark-grey);
+    --off-white: var(--dm-off-white);
+    --span-color: var(--dm-span-color);
+    --body-bg: var(--dm-body-bg);
+    --text-color: var(--dm-text-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    body.theme-auto {
+        --primary-color: var(--dm-primary-color);
+        --dark-grey: var(--dm-dark-grey);
+        --off-white: var(--dm-off-white);
+        --span-color: var(--dm-span-color);
+        --body-bg: var(--dm-body-bg);
+        --text-color: var(--dm-text-color);
+    }
 }
 
 hr {
     margin: 2rem 0rem;
-}
-
-:root {
-    --primary-color: #3551f9;
-    --dark-grey: #595960;
-    --off-white: #e9e8e8;
 }
 
 p {
@@ -111,6 +142,35 @@ p {
     text-align: right;
 }
 
+.head-toggle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.darkmode-icon {
+    height: 25px;
+    width: 25px;
+    margin: 0.6rem 0.2rem 0 0;
+
+}
+
+.select .select-input {
+    height: 1.8rem;
+    width: 4rem;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+}
+
+.select {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 /* header */
 .hero {
     padding: 2rem;
@@ -125,7 +185,7 @@ p {
 }
 
 .blog-page-heading span {
-    color: var(--primary-color);
+    color: var(--span-color);
 }
 
 .hero .hero-img {
@@ -156,7 +216,7 @@ p {
 }
 
 .hero .hero-heading .heading-inverted {
-    color: var(--primary-color);
+    color: var(--span-color);
 }
 
 /* section */
