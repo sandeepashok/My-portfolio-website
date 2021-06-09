@@ -1,11 +1,38 @@
-# My portfolio website
+<!-- Please update value in the {}  -->
 
-Hi, this is my portfolio website 
+<h1 align="center">ScriptoPlankton</h1>
 
-For now i know,
+<div align="center">
+  <h3>
+    <a href="https://sandeep.netlify.app/">
+     >> Demo <<
+    </a>   
+  </h3>
+</div>
 
-1. HTML
-2. CSS
-3. nodeJS
-4. Repl
-5. CHALK
+
+<!-- OVERVIEW -->
+
+## Overview
+
+![screenshot](capture.png)
+
+### About
+
+ This is my portfolio website.
+
+### Built With
+
+<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
+
+- HTML
+- CSS
+- JS
+
+
+## Contact
+
+- Website [ScriptoPlankton](https://sandeep.netlify.app/)
+- GitHub [@sandeepashok](https://github.com/sandeepashok)
+- Gmail [Sandeep98a@gmail.com](sandeep98a@gmail.com)
+
