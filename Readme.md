@@ -15,7 +15,7 @@
 
 ## Overview
 
-![screenshot](capture.png)
+<p align="center"><img src=capture.png></p>
 
 ### About
 
