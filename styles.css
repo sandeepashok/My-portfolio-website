@@ -1,4 +1,3 @@
-/* #5009FF */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
@@ -14,12 +13,12 @@
 }
 
 body {
-    --primary-color: #3551f9;
+    --primary-color: #304beb;
     --dark-grey: #595960;
     --off-white: #e9e8e8;
-    --span-color: #3551f9;
+    --span-color: #304beb;
     --text-color: black;
-    --text-color2: #3551f9;
+    --text-color2: #304beb;
     --body-bg: white;
     font-family: 'Cairo', sans-serif;
     /* font-family: 'Montserrat', sans-serif; */
@@ -134,9 +133,22 @@ p {
 
 }
 
+.brand-and-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .nav-brand {
     font-weight: bold;
     font-size: 1.5rem;
+   margin: 0;
+}
+
+.brand-logo {
+    height: 50px;
+    width: 50px;
+    margin:0 0 0 -8px;
 }
 
 .navigation .link {
@@ -151,6 +163,7 @@ p {
 .head-toggle {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .darkmode-icon {
@@ -167,6 +180,7 @@ p {
     margin-right: 1rem;
     cursor: pointer;
     background-color: var(--primary-color);
+    color: white;
     border: none;
     outline: none;
 }
@@ -245,6 +259,17 @@ p {
     text-align: center;
 }
 
+.tech-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.tech-logo {
+    height: 50px;
+    width: 50px;
+    margin: 1rem;
+}
+
 /* footer */
 
 .footer {
@@ -284,8 +309,17 @@ p {
 
 
 @media (max-width: 425px) {
+
+    .hero {
+        padding: 0;
+    }
+
     .hero-img {
         width: 100%;
+    }
+
+    .hero .projects-heroimg {
+        padding: 0;
     }
 
     .list-item-inline {
@@ -297,7 +331,10 @@ p {
     }
 
     .navigation .nav-pills {
-        text-align: right;
+        text-align: center;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
     }
 
     .non-bullet {
@@ -309,5 +346,10 @@ p {
         margin-bottom: 0.5rem;
         text-align: center;
     }
-
+    .head-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
