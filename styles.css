@@ -207,6 +207,12 @@ p {
     margin-left: auto;
 }
 
+.hero .projects-heroimg {
+    padding: 1rem;
+    max-width: 530px;
+    margin-left: auto;
+}
+
 .hero .hero-heading {
 
     color: var(--dark-grey);
@@ -249,7 +255,7 @@ p {
 }
 
 .footer .link {
-    color: white;
+    color: rgba(255, 255, 255, 0);
 }
 
 .footer .footer-header {
