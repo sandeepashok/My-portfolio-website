@@ -137,6 +137,9 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
 }
 
 .nav-brand {
@@ -270,6 +273,12 @@ p {
     margin: 1rem;
 }
 
+.project-img {
+    max-width: 500px;
+    display: block;
+    text-decoration: none;
+}
+
 /* footer */
 
 .footer {
@@ -328,6 +337,7 @@ p {
 
     .link {
         padding: 0.5rem;
+        width: 150px;
     }
 
     .navigation .nav-pills {
@@ -347,6 +357,18 @@ p {
         text-align: center;
     }
     .head-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-img {
+        max-width: 250px;
+        text-align: center;
+    }
+
+    .container-center {
         display: flex;
         flex-direction: column;
         justify-content: center;
