@@ -18,3 +18,24 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("theme", this.value);
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    var scrollBtn = document.querySelector(".scroll-to-top-btn");
+
+    window.addEventListener("scroll", function () {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollBtn.style.display = "block";
+        } else {
+            scrollBtn.style.display = "none";
+        }
+    });
+
+    scrollBtn.addEventListener("click", function () {
+        scrollToTop();
+    });
+});
+
+function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
